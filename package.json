@@ -1,0 +1,24 @@
+{
+  "name": "gzittc-plant-backend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node dist/server.js",
+    "build": "tsc",
+    "dev": "node --experimental-specifier-resolution=node --loader ts-node/esm src/server.ts"
+  },
+  "type": "module",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "packageManager": "pnpm@10.10.0",
+  "dependencies": {
+    "@types/dotenv": "^8.2.3",
+    "@types/node": "^24.0.3",
+    "dotenv": "^16.5.0",
+    "mongodb": "^6.17.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.8.3"
+  }
+}
