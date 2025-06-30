@@ -1,0 +1,1 @@
+export const urlParse = (path: string) => new URL(path, "http://localhost/")

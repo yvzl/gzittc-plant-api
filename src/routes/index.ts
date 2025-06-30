@@ -1,3 +1,5 @@
-import {prefix} from "../configs";
+import {area} from "./area"
+import {tree} from "./tree"
+import {treeLevel} from "./treeLevel"
 
-export const url = prefix
+export default [area, tree, treeLevel]
