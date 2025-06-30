@@ -4,5 +4,6 @@ export const treeLevelInit: ITreeLevel = {
     name: "",
     introduce: "",
     time: "",
-    image: ""
+    image: "",
+    tree_id: ""
 }

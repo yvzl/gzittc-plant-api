@@ -4,4 +4,5 @@ export interface ITreeLevel {
     introduce: string
     time: string
     image: string
+    tree_id: string
 }
