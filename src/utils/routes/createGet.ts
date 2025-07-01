@@ -24,7 +24,7 @@ export const createGet = <T extends Crud<any>>() => {
                 const result = await dbCrud.getAll();
                 send(res, 200, result);
             }),
-        attr: (dbCrud: T, req: IncomingMessage, res: ServerResponse) =>
+        field: (dbCrud: T, req: IncomingMessage, res: ServerResponse) =>
             errHandler(res, async () => {
                 const url = req.url ?? '/';
                 const search = urlParse(url).searchParams;

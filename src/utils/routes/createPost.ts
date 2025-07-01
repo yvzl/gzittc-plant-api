@@ -7,7 +7,8 @@ export const createPost = <K extends IRoutes, T extends Crud<K>>(initData: K) =>
         async single(dbCrud: T, req: IncomingMessage, res: ServerResponse) {
             await errHandler(res, async () => {
                 const data = await getBody(req);
-                const result = await dbCrud.postSingle(Object.assign(initData, data));
+                console.log(data)
+                const result = await dbCrud.postSingle({...initData, ...data});
                 send(res, 200, result);
             })
         },
